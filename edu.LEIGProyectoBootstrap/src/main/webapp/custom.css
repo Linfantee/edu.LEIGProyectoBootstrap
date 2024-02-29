@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body{
+	background-color: mediumpurple;
+}
+.lista{
+	
+	text-align: left;
+	margin-right: 100%;
+}
+.fila{
+	display: block;
+    flex-wrap: wrap;
+	
+}
