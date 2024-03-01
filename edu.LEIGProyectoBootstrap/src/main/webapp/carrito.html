@@ -30,8 +30,72 @@
 			</ul>
 		</div>
 	</header>
+	<main>
+		
+	<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+		<div class="form-floating mb-3">
+            <input class="form-control" id="name" type="name" placeholder="name" data-sb-validations="required,name" />
+            <label for="emailAddress">Nombre y apellidos</label>
+            <div class="invalid-feedback" data-sb-feedback="name:reqired">El nombre es necesario .</div>
+            <div class="invalid-feedback" data-sb-feedback="name:direccion">El nombre no es valido.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="direccion" type="direccion" placeholder="direccion" data-sb-validations="required,direccion" />
+            <label for="emailAddress">Dirección de envio</label>
+            <div class="invalid-feedback" data-sb-feedback="direccion:reqired">Direccion es necesaria.</div>
+            <div class="invalid-feedback" data-sb-feedback="direccion:direccion">Direccion no es valida.</div>
+        </div>
+        
+    
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 
+
+<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+		 <div class="form-floating mb-3">
+            <input class="form-control" id="pago" type="pago" placeholder="pago" data-sb-validations="required,pago" />
+            <label for="emailAddress">Pago del envio</label>
+            <div class="invalid-feedback" data-sb-feedback="pago:reqired">Pago es necesario.</div>
+            <div class="invalid-feedback" data-sb-feedback="pago:direccion">Pago no es valido.</div>
+        </div>
+      
+    
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+</main>
 	<footer>
 		<div class="row text-center mt-5">
 			<p class="final col">&COPY;JujutsuClothes.com</p>

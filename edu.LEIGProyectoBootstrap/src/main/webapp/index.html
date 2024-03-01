@@ -15,7 +15,7 @@
 
 <body>
 	<header>
-		<div class="container-fluid text-center">
+		<div class="container-fluid text-center fixed-top">
 			<div class="row">
 				<div class="col-md-12 titulo p-5">
 					<img src="imagenes/images.png">
@@ -23,8 +23,41 @@
 				<div class="row filaMenu ">
 					<div class="col-md-3">
 					</div>
-					<nav class="col-md-7 p-4" "text-white">
-						<h1>Bienvenido a JujutsuClothes</h1>
+					<div class="col-md-3">
+						<img class="rounded-circle" src="imagenes/img10.jpg" width="50%">
+					</div>
+					<nav class="col-md-7 p-4">
+						<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+							<div class="container-fluid">
+								<a class="navbar-brand" href="#"><img class="rounded-circle" src="imagenes/img10.jpg" width="50%"></a>
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapsibleNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="collapsibleNavbar">
+									<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Link</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Link</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Link</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" role="button"
+												data-bs-toggle="dropdown">Dropdown</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Link</a></li>
+												<li><a class="dropdown-item" href="#">Another link</a></li>
+												<li><a class="dropdown-item" href="#">A third link</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
 					</nav>
 					<div class="col-md-2 p-4">
 						<a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="180" height="180"
@@ -36,24 +69,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="lista">
-			<ul class="nav nav-pills flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" href="carrito.html">compra</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="colecciones.html">Todas las unidades</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="completo.html"> Parte superior</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="completo.html">Parte inferior</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<main>
+
 		<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 			<div class="carousel-inner">
@@ -76,46 +92,95 @@
 			</button>
 		</div>
 		</div>
+	</header>
+	<main>
+		<div class="lista">
+			<ul class="nav nav-pills flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="colecciones.html">Todas las unidades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="superior.html"> Parte superior</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="inferior.html">Partes Inferiores</a>
+				</li>
+			</ul>
+		</div>
 		<main class="container">
-		<div class="row fila">
-			<div class="col-4" >
-				<div class="card" style="width: 20rem">
-					<img class="card-img-top" src="imagenes/ropa1.jpeg" alt="sug" style="width:100%">
-					<div class="card-body">
-						<h4 class="card-title">Sudadera Gojo</h4>
-						<p class="card-text">La sudadera de nuestro profesor favorito y ahora a un precio mas bajo.</p>
-						<a href="#" class="btn btn-primary">Comprar</a>
-					</div>
-
+			<div class="row">
+				<div class="col-4">
 					<div class="card" style="width: 20rem">
-						<img class="card-img-top" src="imagenes/ropa2.jpg" alt="sug" style="width:100%">
+						<img class="card-img-top" src="imagenes/ropa1.jpeg" alt="sug" style="width:100%">
 						<div class="card-body">
-							<h4 class="card-title">Sudadera Sukuna</h4>
-							<p class="card-text">La sudadera de nuestro villano mas poderoso. </p>
+							<h4 class="card-title">Sudadera Gojo</h4>
+							<p class="card-text">La sudadera de nuestro profesor favorito y ahora a un precio mas bajo.
+							</p>
 							<a href="#" class="btn btn-primary">Comprar</a>
-						</div>
-
-						<div class="card" style="width: 20rem">
-							<img class="card-img-top" src="imagenes/ropa3.jpg" alt="sug" style="width:100%">
-							<div class="card-body">
-								<h4 class="card-title">Sudadera marcas Sukuna</h4>
-								<p class="card-text">Si quieres llevar los tatuajes de tu personaje favorito aprovecha
-									ahora y compra.</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
-							</div>
 						</div>
 					</div>
 				</div>
-	</main>
-	<footer>
-		<div class="row text-center mt-5">
-			<p class="final col">&COPY;JujutsuClothes.com</p>
-		</div>
-	</footer>
+				<div class="col-4">
+					<div class="card" style="width:20rem">
+						<img class="card-img-top" src="imagenes/ropa2.jpg" alt="sug" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Sudadera Sukuna</h4>
+							<p class="card-text">La sudadera de nuestro villano mas poderoso.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card" style="width:20rem">
+						<img class="card-img-top" src="imagenes/ropa3.jpg" alt="sug" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Sudadera marcas Sukuna</h4>
+							<p class="card-text">Si quieres llevar los tatuajes de tu personaje favorito aprovecha
+								ahora y compra.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+		</main>
+		<footer>
+			<div class="row text-center mt-5">
+				<p class="final col">&COPY;JujutsuClothes.com</p>
+			</div>
+		</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<!---<div class="row filaMenu ">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-3">
+					<img class="rounded-circle" src="imagenes/img10.jpg" width="50%">
+				</div>
+					<nav class="col-md-7 p-4">
+						<div class="dropdown">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+								Bienvenido a JujutsuClothes
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="colecciones.html">Todas las unidades</a></li>
+								<li><a class="dropdown-item" href="superior.html">Parte superior</a></li>
+								<li><a class="dropdown-item" href="inferior.html">Parte Inferior</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="col-md-2 p-4">
+						<a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="180" height="180"
+								fill="curre	ntColor" class="bi bi-cart-fill carritoIcon" viewBox="0 0 16 16">
+								<path
+									d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+							</svg></a>
+					</div>
+				</div>
+			</div>
+			->
+			
