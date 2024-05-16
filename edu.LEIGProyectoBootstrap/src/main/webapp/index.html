@@ -11,6 +11,7 @@
 	<meta name="Author" content="Luis Enrique Infante Gonzalez">
 	<meta name="Descripcion"
 		content="Es una tienda de ropa la cual se centra completamente en diseños de jujutsu kaisen.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="script/js.js"></script>
 </head>
 
@@ -45,14 +46,15 @@
 													href="carrito.html"><i class="bi bi-cart"></i><img
 														src="imagenes/cart.svg"></a></li>
 											<li class="nav-item px-lg-4">
-												<a class="nav-link text-uppercase">
-													<label>Nuestra ropa </label>
-													<select>
-														<option value="rigatoni">Parte superior</option>
-														<option value="dave">Parte Inferior</option>
-														<option value="pumpernickel">Compra</option>
-													</select>
+												<a class="nav-link dropdown-toggle" href="#" role="button"
+													data-bs-toggle="dropdown" aria-expanded="false">COLECCIONES
 												</a>
+												<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="superior.html">Superior</a>
+													</li>
+													<li><a class="dropdown-item" href="inferior.html">Inferior</a></li>
+													<li>
+												</ul>
 											</li>
 									</div>
 								</div>
@@ -62,8 +64,8 @@
 				</nav>
 			</div>
 		</div>
-		<hr>
-		<hr>
+		<br>
+		<br>
 		<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 			<div class="carousel-inner">
@@ -85,67 +87,64 @@
 				<span class="carousel-control-next-icon"></span>
 			</button>
 		</div>
-		</div>
 	</header>
 	<main>
 		<div class="lista">
 			<ul class="nav nav-pills flex-column">
 				<li class="nav-item">
-					<a class="nav-link active" href="colecciones.html">Todas las unidades</a>
+					<a class="nav-link active" href="#">Carrusel</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="superior.html"> Parte superior</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="inferior.html">Partes Inferiores</a>
+					<a class="nav-link active" href="#productos">Algunos productos</a>
 				</li>
 			</ul>
 		</div>
-	
-			<div class="row">
-				<div class="col-4">
-					<div class="card" style="width: 20rem">
-						<img class="card-img-top" src="imagenes/ropa1.jpeg" alt="sug" style="width:100%">
-						<div class="card-body">
-							<h4 class="card-title">Sudadera Gojo</h4>
-							<p class="card-text">La sudadera de nuestro profesor favorito y ahora a un precio mas bajo.
-							</p>
-							<a href="carrito.html" class="btn btn-primary">Comprar</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="card" style="width:20rem">
-						<img class="card-img-top" src="imagenes/ropa3.jpg" alt="sug" style="width:93%">
-						<div class="card-body">
-							<h4 class="card-title">Sudadera marcas Sukuna</h4>
-							<p class="card-text">Si quieres llevar los tatuajes de tu personaje favorito aprovecha
-								ahora y compra.</p>
-							<a href="carrito.html" class="btn btn-primary">Comprar</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="card" style="width:20rem">
-						<img class="card-img-top" src="imagenes/ropa2.jpg" alt="sug" style="width:100%">
-						<div class="card-body">
-							<h4 class="card-title">Sudadera Sukuna</h4>
-							<p class="card-text">La sudadera de nuestro villano mas poderoso.</p>
-							<a href="carrito.html" class="btn btn-primary">Comprar</a>
-						</div>
-					</div>
-				</div>
 
-		</main>
-		<footer>
-			<div class="row text-center mt-5">
-				<p class="final col">&COPY;JujutsuClothes.com</p>
+		<div class="row" id="productos">
+			<div class="col-4">
+				<div class="card" style="width: 20rem">
+					<img class="card-img-top" src="imagenes/ropa1.jpeg" alt="sug" style="width:100%">
+					<div class="card-body">
+						<h4 class="card-title">Sudadera Gojo</h4>
+						<p class="card-text">La sudadera de nuestro profesor favorito y ahora a un precio mas bajo.
+						</p>
+						<a href="carrito.html" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
 			</div>
-		</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"></script>
+			<div class="col-4">
+				<div class="card" style="width:20rem">
+					<img class="card-img-top" src="imagenes/ropa3.jpg" alt="sug" style="width:93%">
+					<div class="card-body">
+						<h4 class="card-title">Sudadera marcas Sukuna</h4>
+						<p class="card-text">Si quieres llevar los tatuajes de tu personaje favorito aprovecha
+							ahora y compra.</p>
+						<a href="carrito.html" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width:20rem">
+					<img class="card-img-top" src="imagenes/ropa2.jpg" alt="sug" style="width:100%">
+					<div class="card-body">
+						<h4 class="card-title">Sudadera Sukuna</h4>
+						<p class="card-text">La sudadera de nuestro villano mas poderoso.</p>
+						<a href="carrito.html" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="row text-center mt-5">
+			<p class="final col">&COPY;JujutsuClothes.com</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

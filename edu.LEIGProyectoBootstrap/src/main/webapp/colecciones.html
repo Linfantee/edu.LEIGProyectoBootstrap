@@ -11,35 +11,64 @@
 	<meta name="Author" content="Luis Enrique Infante Gonzalez">
 	<meta name="Descripcion"
 		content="Es una tienda de ropa la cual se centra completamente en diseños de jujutsu kaisen.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 	<header>
-		<div class="container-fluid text-center">
+			<div class="container">
 			<div class="row">
-				<div class="col-md-12 titulo p-5">
-					<img src="imagenes/images.png">
-				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img src="imagenes/img10.jpg" width="30" height="30" class="d-inline-block align-top">
+							JujutsuClothes</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+							<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+								<div class="container">
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+										data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation"><span
+											class="navbar-toggler-icon"></span></button>
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+										<ul class="navbar-nav mx-auto">
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="index.html">Inicio</a></li>
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="colecciones.html">Todas las Unidades</a></li>
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="carrito.html"><i class="bi bi-cart"></i><img
+														src="imagenes/cart.svg"></a></li>
+											<li class="nav-item px-lg-4">
+												<a class="nav-link dropdown-toggle" href="#" role="button"
+													data-bs-toggle="dropdown" aria-expanded="false">COLECCIONES
+												</a>
+												<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="superior.html">Superior</a>
+													</li>
+													<li><a class="dropdown-item" href="inferior.html">Inferior</a></li>
+													<li>
+												</ul>
+											</li>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
-		<div class="lista">
-			<ul class="nav nav-pills flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Inicio</a>
-				</li>
-				<a class="nav-link active" href="superior.html"> Parte superior</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="inferior.html">Partes Inferiores</a>
-				</li>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="carrito.html">compra</a>
-				<li class="nav-item">
-			</ul>
-		</div>
+		<br>
+		<br>
 	</header>
 	<main>
+		<br>
+		<br>
 		<div class="container-fluid text-center">
 			<nav class="col-md-15 p-4" "text-white">
 				<h3>Todos nuestros productos</h3>
@@ -89,7 +118,8 @@
 						<img class="card-img-top" src="imagenes/ropa7.jpg" alt="sug" style="width:112%">
 						<div class="card-body">
 							<h4 class="card-title">Camiseta Sukuna e Itadori</h4>
-							<p class="card-text">La camiseta del villano principal de la obra junto con itadori el protagonista de esta
+							<p class="card-text">La camiseta del villano principal de la obra junto con itadori el
+								protagonista de esta
 							</p>
 							<a href="carrito.html" class="btn btn-primary">Comprar</a>
 						</div>
@@ -110,46 +140,49 @@
 						<img class="card-img-top" src="imagenes/ropa9.jpeg" alt="sug" style="width:106%">
 						<div class="card-body">
 							<h4 class="card-title">Pantalones nobara</h4>
-							<p class="card-text">Los pantalones largos de nuestra co-protagonista en una nueva forma.</p>
-							<a href="carrito.html" class="btn btn-primary">Comprar</a>
-						</div>
-					</div>
-				</div>
-				<hr>
-			<hr>
-
-			<div class="row">
-				<div class="col-4">
-					<div class="card" style="width: 20rem">
-						<img class="card-img-top" src="imagenes/ropa10.jpg" alt="sug" style="width:100%">
-						<div class="card-body">
-							<h4 class="card-title">Camiseta Gojo</h4>
-							<p class="card-text">La Camiseta de nuestro profesor favorito y ahora a un precio mas bajo.
+							<p class="card-text">Los pantalones largos de nuestra co-protagonista en una nueva forma.
 							</p>
 							<a href="carrito.html" class="btn btn-primary">Comprar</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
-					<div class="card" style="width:20rem">
-						<img class="card-img-top" src="imagenes/ropa11.webp" alt="sug" style="width:100%">
-						<div class="card-body">
-							<h4 class="card-title">Bañador gojo y geto</h4>
-							<p class="card-text">El bañador de nuestros dos mejores amigos.</p>
-							<a href="carrito.html" class="btn btn-primary">Comprar</a>
+				<hr>
+				<hr>
+
+				<div class="row">
+					<div class="col-4">
+						<div class="card" style="width: 20rem">
+							<img class="card-img-top" src="imagenes/ropa10.jpg" alt="sug" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Camiseta Gojo</h4>
+								<p class="card-text">La Camiseta de nuestro profesor favorito y ahora a un precio mas
+									bajo.
+								</p>
+								<a href="carrito.html" class="btn btn-primary">Comprar</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-4">
-				<div class="card" style="width:20rem">
-					<img class="card-img-top" src="imagenes/ropa12.webp" alt="sug" style="width:91%">
-					<div class="card-body">
-						<h4 class="card-title">Sudadera Sukuna de navidad</h4>
-						<p class="card-text">La sudadera de nuestro villano mas poderoso y ahora de navidad!!.</p>
-						<a href="carrito.html" class="btn btn-primary">Comprar</a>
+					<div class="col-4">
+						<div class="card" style="width:20rem">
+							<img class="card-img-top" src="imagenes/ropa11.webp" alt="sug" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Bañador gojo y geto</h4>
+								<p class="card-text">El bañador de nuestros dos mejores amigos.</p>
+								<a href="carrito.html" class="btn btn-primary">Comprar</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
+					<div class="col-4">
+						<div class="card" style="width:20rem">
+							<img class="card-img-top" src="imagenes/ropa12.webp" alt="sug" style="width:91%">
+							<div class="card-body">
+								<h4 class="card-title">Sudadera Sukuna de navidad</h4>
+								<p class="card-text">La sudadera de nuestro villano mas poderoso y ahora de navidad!!.
+								</p>
+								<a href="carrito.html" class="btn btn-primary">Comprar</a>
+							</div>
+						</div>
+					</div>
 
 
 	</main>

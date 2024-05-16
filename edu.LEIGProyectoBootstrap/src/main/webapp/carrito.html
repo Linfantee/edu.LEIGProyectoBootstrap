@@ -11,120 +11,88 @@
 	<meta name="Author" content="Luis Enrique Infante Gonzalez">
 	<meta name="Descripcion"
 		content="Es una tienda de ropa la cual se centra completamente en diseños de jujutsu kaisen.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="script/js.js"></script>
 </head>
 
 <body>
 	<header>
-		<div class="container-fluid text-center">
+	<div class="container">
 			<div class="row">
-				<div class="col-md-12 titulo p-5">
-					<img src="imagenes/images.png">
-				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img src="imagenes/img10.jpg" width="30" height="30" class="d-inline-block align-top">
+							JujutsuClothes</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+							<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+								<div class="container">
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+										data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation"><span
+											class="navbar-toggler-icon"></span></button>
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+										<ul class="navbar-nav mx-auto">
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="index.html">Inicio</a></li>
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="colecciones.html">Todas las Unidades</a></li>
+											<li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
+													href="carrito.html"><i class="bi bi-cart"></i><img
+														src="imagenes/cart.svg"></a></li>
+											<li class="nav-item px-lg-4">
+												<a class="nav-link dropdown-toggle" href="#" role="button"
+													data-bs-toggle="dropdown" aria-expanded="false">COLECCIONES
+												</a>
+												<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="superior.html">Superior</a>
+													</li>
+													<li><a class="dropdown-item" href="inferior.html">Inferior</a></li>
+													<li>
+												</ul>
+											</li>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
-		<div class="lista">
-			<ul class="nav nav-pills flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Inicio</a>
-				</li>
-			</ul>
-		</div>
+		<br>
+		<br>
+		<hr>
+		<hr>
 	</header>
 	<main>
-
-		<div class="container px-5 my-5">
-			<form id="contactForm" data-sb-form-api-token="API_TOKEN">
-				<div class="form-floating mb-3">
-					<input class="form-control" id="name" type="name" placeholder="name"
-						data-sb-validations="required,name" />
-					<label for="emailAddress">Nombre y apellidos</label>
-					<div class="invalid-feedback" data-sb-feedback="name:reqired">El nombre es necesario .</div>
-					<div class="invalid-feedback" data-sb-feedback="name:direccion">El nombre no es valido.</div>
-				</div>
-				<div class="form-floating mb-3">
-					<input class="form-control" id="direccion" type="direccion" placeholder="direccion"
-						data-sb-validations="required,direccion" />
-					<label for="emailAddress">Dirección de envio</label>
-					<div class="invalid-feedback" data-sb-feedback="direccion:reqired">Direccion es necesaria.</div>
-					<div class="invalid-feedback" data-sb-feedback="direccion:direccion">Direccion no es valida.</div>
-				</div>
-
-
-				<div class="d-none" id="submitSuccessMessage">
-					<div class="text-center mb-3">
-						<div class="fw-bolder">Form submission successful!</div>
-						<p>To activate this form, sign up at</p>
-						<a
-							href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-					</div>
-				</div>
-				<div class="d-none" id="submitErrorMessage">
-					<div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
-				</div>
-				<div class="d-grid">
-					<button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-				</div>
-			</form>
-		</div>
-		<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-
-
-		<div class="container px-5 my-5">
-			<form id="contactForm" data-sb-form-api-token="API_TOKEN">
-				<div class="form-floating mb-3">
-					<input class="form-control" id="pago" type="pago" placeholder="pago"
-						data-sb-validations="required,pago" />
-					<label for="emailAddress">Pago del envio</label>
-					<div class="invalid-feedback" data-sb-feedback="pago:reqired">Pago es necesario.</div>
-					<div class="invalid-feedback" data-sb-feedback="pago:direccion">Pago no es valido.</div>
-				</div>
-
-
-				<div class="d-none" id="submitSuccessMessage">
-					<div class="text-center mb-3">
-						<div class="fw-bolder">Form submission successful!</div>
-						<p>To activate this form, sign up at</p>
-						<a
-							href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-					</div>
-				</div>
-				<div class="d-none" id="submitErrorMessage">
-					<div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
-				</div>
-				<div class="d-grid">
-					<button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-				</div>
-			</form>
-		</div>
-		<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
 		<div class="row mt-5">
 			<form class="col mx-auto mb-5" onsubmit="return verificarContrasenia()">
 				<div class="mb-3">
-					<label for="exampleInputEmail3" class="form-label">Correo electronico</label>
-					<input autocomplete="off" type="email" class="form-control" id="exampleInputEmail3"
+					<label for="exampleInputEmail" class="form-label">Correo electronico</label>
+					<input autocomplete="off" type="email" class="form-control" id="exampleInputEmail"
 						aria-describedby="emailHelp">
 				</div>
 				<div class="mb-3">
-					<label for="exampleInputEmail4" class="form-label">Dirección</label>
-					<input autocomplete="off" type="text" class="form-control" id="exampleInputEmail4"
+					<label for="exampleInputEmail2" class="form-label">Dirección</label>
+					<input autocomplete="off" type="text" class="form-control" id="exampleInputEmail2"
 						aria-describedby="emailHelp">
 				</div>
 				<div class="mb-3">
 					<label for="exampleInputPassword3" class="form-label">Contraseña</label>
-					<input autocomplete="off" type="password" class="form-control" id="exampleInputPassword3">
-					<P class="text-white">Pon como minimo 8 caracteres</P>
+					<input autocomplete="off" type="password" class="form-control" id="exampleInputPassword1">
 				</div>
 				<div class="mb-3">
-					<label autocomplete="off" for="exampleInputPassword4" class="form-label">Repetir
-						Contraseña</label>
-					<input type="password" class="form-control" id="exampleInputPassword4">
-				</div>
-
+								<label autocomplete="off" for="exampleInputPassword4" class="form-label">Repetir
+									Contraseña</label>
+								<input type="password" class="form-control" id="exampleInputPassword2">
+							</div>
 				<button type="submit" class="btn btn-primary">Acceder</button>
-				<button class="btn btn-primary"><a href="#" class="text-white">Pagar</a></button>
+				<button class="btn btn-primary"><a href="pagar.html" class="text-white">Pagar</a></button>
 			</form>
 		</div>
 	</main>
